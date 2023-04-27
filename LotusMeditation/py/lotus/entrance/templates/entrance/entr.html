@@ -1,0 +1,23 @@
+{% extends 'entrance/layout.html' %}
+
+{% block title %}
+	<title>Вход</title>
+{% endblock %}
+
+{% block content %}
+	<center>
+      <nav class="enter mt-5">
+          <div>
+            <label for="email">E-mail:</label>
+              <input type="email" placeholder="example@example.com" id="email" size="30" required>
+          </div>
+        <div>
+          <label for="pass">Пароль (минимум 8 символов):</label>
+          <input type="password" id="pass" name="password"
+           minlength="8" required>
+        </div>
+      </nav>
+      <p><input type="submit" value="Войти"></p>
+      <p><input type="submit" value="Зарегистрироваться"></p>
+	</center>
+{% endblock %}
